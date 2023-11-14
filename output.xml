@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231024 15:07:47.616" rpa="false" schemaversion="4">
+<suite id="s1" name="BannerFinance" source="D:\automation_test\Testsuite\BannerFinance.robot">
+<test id="s1-t1" name="Login to Store banner check" line="16">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<arg>executable_path=${Driver_Path}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231024 15:07:49.288" level="INFO">Opening browser 'Firefox' to base url 'https://testkfin.kvpos.com:8443/man/#/login'.</msg>
+<msg timestamp="20231024 15:07:49.299" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231024 15:07:49.299" level="FAIL">NoSuchDriverException: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</msg>
+<status status="FAIL" starttime="20231024 15:07:49.288" endtime="20231024 15:07:49.367"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.368" endtime="20231024 15:07:49.368"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='UserName']</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.369" endtime="20231024 15:07:49.369"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id='Password']</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.369" endtime="20231024 15:07:49.369"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@name='quan-ly']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.370" endtime="20231024 15:07:49.370"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.370" endtime="20231024 15:07:49.370"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//div[@class='kfin-touch-title-icon']</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.370" endtime="20231024 15:07:49.370"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.370" endtime="20231024 15:07:49.370"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[@class='kfin-name' and text()='Tài chính']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.370" endtime="20231024 15:07:49.372"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//div[@class='kfin-touch-slider-item']</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.372" endtime="20231024 15:07:49.372"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${button_LoanManager}</var>
+<arg>Element Should Be Visible</arg>
+<arg>(//*[@class='kfin-touch-btn' and text()='Quản lý khoản vay'])[1]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.372" endtime="20231024 15:07:49.372"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${button_LoanManager}</arg>
+<arg>Log</arg>
+<arg>Button exists</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>Button does not exist</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.373" endtime="20231024 15:07:49.373"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.373" endtime="20231024 15:07:49.373"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="kfin-touch-point"]/div/div[2]/div/div/ul/li[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.373" endtime="20231024 15:07:49.373"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${button_LoanManager}</var>
+<arg>Element Should Be Visible</arg>
+<arg>(//*[@class='kfin-touch-btn' and text()='Đăng ký ngay'])[1]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.374" endtime="20231024 15:07:49.374"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${button_LoanManager}</arg>
+<arg>Log</arg>
+<arg>Button exists</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>Button does not exist</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.374" endtime="20231024 15:07:49.374"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.374" endtime="20231024 15:07:49.374"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="kfin-touch-point"]/div/div[2]/div/div/ul/li[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.374" endtime="20231024 15:07:49.374"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.374" endtime="20231024 15:07:49.374"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//*[@class='kfin-touch-btn' and text()='Quản lý khoản vay'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.374" endtime="20231024 15:07:49.374"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//*[@class='kfin-touch-btn' and text()='Đăng ký khoản vay'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.375" endtime="20231024 15:07:49.375"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.375" endtime="20231024 15:07:49.375"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231024 15:07:49.375" endtime="20231024 15:07:49.375"/>
+</kw>
+<doc>Login to the online store -&gt;&gt; click banner  =&gt;&gt;&gt; show register screen.</doc>
+<status status="FAIL" starttime="20231024 15:07:49.287" endtime="20231024 15:07:49.375">NoSuchDriverException: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<status status="FAIL" starttime="20231024 15:07:47.618" endtime="20231024 15:07:49.376"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="BannerFinance">BannerFinance</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231024 15:07:49.284" level="ERROR">Error in file 'D:\automation_test\Testsuite\BannerFinance.robot' on line 4: Importing library 'MongoDBLibrary' failed: ModuleNotFoundError: No module named 'mongo_connection_manager'
+Traceback (most recent call last):
+  File "D:\anaconda3\Lib\site-packages\MongoDBLibrary\__init__.py", line 1, in &lt;module&gt;
+    from mongo_connection_manager import MongoConnectionManager
+PYTHONPATH:
+  D:\anaconda3\Scripts\robot.exe
+  D:\anaconda3\python311.zip
+  D:\anaconda3\DLLs
+  D:\anaconda3\Lib
+  D:\anaconda3
+  D:\anaconda3\Lib\site-packages
+  D:\anaconda3\Lib\site-packages\win32
+  D:\anaconda3\Lib\site-packages\win32\lib
+  D:\anaconda3\Lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
